@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rayze Insights - Expert digital marketing insights, trends, and strategies to help you scale your business.">
+    <title>Insights - Digital Marketing Blog & Resources | Rayze</title>
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+</head>
+<body class="bg-black text-white">
+    <!-- Loading Screen -->
+    <div class="loading-screen fixed inset-0 bg-black z-50 flex items-center justify-center">
+        <div class="loading-content">
+            <h2 class="text-h1-mobile font-heading text-brand">Rayze</h2>
+            <div class="loading-bar mt-4 w-48 h-1 bg-accent-dark overflow-hidden">
+                <div class="loading-progress h-full bg-brand transition-transform duration-1000"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header fixed top-0 left-0 w-full z-40 transition-all duration-300">
+        <nav class="container mx-auto flex items-center justify-between py-6">
+            <a href="/" class="logo text-2xl font-heading font-bold">
+                <span class="text-brand">Rayze</span>
+            </a>
+            
+            <div class="nav-menu hidden lg:flex items-center gap-8">
+                <a href="/services" class="nav-link text-text-grey hover:text-white transition-colors">Services</a>
+                <a href="/case-studies" class="nav-link text-text-grey hover:text-white transition-colors">Case Studies</a>
+                <a href="/about" class="nav-link text-text-grey hover:text-white transition-colors">About</a>
+                <a href="/insights" class="nav-link text-white transition-colors">Insights</a>
+                <a href="/contact" class="btn btn-primary bg-brand text-black px-6 py-3 rounded-full font-semibold hover:bg-brand-dark transition-colors">Get Started</a>
+            </div>
+            
+            <button class="nav-toggle lg:hidden w-8 h-8 relative" aria-label="Toggle menu">
+                <span class="nav-toggle-line absolute left-0 w-full h-0.5 bg-white transition-all"></span>
+                <span class="nav-toggle-line absolute left-0 w-full h-0.5 bg-white transition-all"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-[50vh] flex items-center relative overflow-hidden pt-24">
+        <div class="container mx-auto relative z-10">
+            <div class="hero-content max-w-4xl">
+                <h1 class="hero-title font-heading mb-6">
+                    <span class="span-hlines">
+                        <span class="span-hline">
+                            <span class="span-hline-inner">Insights that drive</span>
+                        </span>
+                        <span class="span-hline">
+                            <span class="span-hline-inner text-gradient">real growth</span>
+                        </span>
+                    </span>
+                </h1>
+                
+                <p class="hero-subtitle text-xl text-text-grey mb-8 max-w-2xl fade-up">
+                    Stay ahead with expert analysis, industry trends, and proven strategies 
+                    from our team of digital marketing specialists.
+                </p>
+                
+                <div class="flex gap-4 flex-wrap fade-up">
+                    <button class="filter-btn px-6 py-2 rounded-full border border-brand text-brand hover:bg-brand hover:text-black transition-all">All Topics</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-accent-dark text-text-grey hover:border-brand hover:text-brand transition-all">SEO</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-accent-dark text-text-grey hover:border-brand hover:text-brand transition-all">PPC</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-accent-dark text-text-grey hover:border-brand hover:text-brand transition-all">Strategy</button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-accent-dark text-text-grey hover:border-brand hover:text-brand transition-all">Technical</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <article class="featured-post bg-secondary-black rounded-2xl overflow-hidden fade-up">
+                <div class="grid cols-2 gap-0">
+                    <div class="p-12">
+                        <div class="text-brand text-sm font-medium mb-4">FEATURED • SEO STRATEGY</div>
+                        <h2 class="text-h1-sm font-heading mb-4">
+                            The Complete Guide to Core Web Vitals in 2024
+                        </h2>
+                        <p class="text-lg text-text-grey mb-6">
+                            Google's Core Web Vitals are more important than ever. Learn how to optimize 
+                            your site's performance metrics and improve both rankings and user experience.
+                        </p>
+                        <div class="flex items-center gap-6 mb-8">
+                            <div class="flex items-center gap-2">
+                                <div class="w-10 h-10 rounded-full bg-brand/20"></div>
+                                <div>
+                                    <p class="font-semibold">Emma Wright</p>
+                                    <p class="text-sm text-text-grey">Technical SEO Lead</p>
+                                </div>
+                            </div>
+                            <span class="text-text-grey">•</span>
+                            <span class="text-text-grey">15 min read</span>
+                            <span class="text-text-grey">•</span>
+                            <span class="text-text-grey">Dec 15, 2024</span>
+                        </div>
+                        <a href="/insights/core-web-vitals-guide" class="text-brand hover:text-brand-dark transition-colors font-semibold">
+                            Read Full Article →
+                        </a>
+                    </div>
+                    <div class="featured-image bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/20 to-transparent"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-heading mb-12">Recent Articles</h2>
+            
+            <div class="grid cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="article-card bg-secondary-black rounded-xl overflow-hidden hover:border-brand border border-transparent transition-all fade-up">
+                    <div class="aspect-video bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-brand/20 text-brand text-sm rounded-full">PPC</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading mb-3">
+                            Maximizing ROAS: Advanced Google Ads Strategies
+                        </h3>
+                        <p class="text-text-grey mb-4">
+                            Discover how to leverage automated bidding, audience signals, and creative 
+                            testing to achieve exceptional return on ad spend.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-grey">8 min read</span>
+                            <a href="#" class="text-brand hover:text-brand-dark transition-colors">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card bg-secondary-black rounded-xl overflow-hidden hover:border-brand border border-transparent transition-all fade-up">
+                    <div class="aspect-video bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-brand/20 text-brand text-sm rounded-full">Email Marketing</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading mb-3">
+                            Email Segmentation That Actually Works
+                        </h3>
+                        <p class="text-text-grey mb-4">
+                            Learn how to create hyper-targeted email campaigns using behavioral data, 
+                            purchase history, and engagement metrics.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-grey">6 min read</span>
+                            <a href="#" class="text-brand hover:text-brand-dark transition-colors">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card bg-secondary-black rounded-xl overflow-hidden hover:border-brand border border-transparent transition-all fade-up">
+                    <div class="aspect-video bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-brand/20 text-brand text-sm rounded-full">Technical</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading mb-3">
+                            Server-Side Tracking: The Future of Analytics
+                        </h3>
+                        <p class="text-text-grey mb-4">
+                            Why server-side tracking is essential for accurate data collection and how 
+                            to implement it without losing insights.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-grey">10 min read</span>
+                            <a href="#" class="text-brand hover:text-brand-dark transition-colors">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card bg-secondary-black rounded-xl overflow-hidden hover:border-brand border border-transparent transition-all fade-up">
+                    <div class="aspect-video bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-brand/20 text-brand text-sm rounded-full">SEO</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading mb-3">
+                            E-E-A-T: Building Authority in Your Niche
+                        </h3>
+                        <p class="text-text-grey mb-4">
+                            How to demonstrate Experience, Expertise, Authoritativeness, and 
+                            Trustworthiness to both users and search engines.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-grey">12 min read</span>
+                            <a href="#" class="text-brand hover:text-brand-dark transition-colors">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card bg-secondary-black rounded-xl overflow-hidden hover:border-brand border border-transparent transition-all fade-up">
+                    <div class="aspect-video bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-brand/20 text-brand text-sm rounded-full">Strategy</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading mb-3">
+                            Attribution Models: Finding What Really Works
+                        </h3>
+                        <p class="text-text-grey mb-4">
+                            Compare different attribution models and learn how to choose the right one 
+                            for your business goals and customer journey.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-grey">9 min read</span>
+                            <a href="#" class="text-brand hover:text-brand-dark transition-colors">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card bg-secondary-black rounded-xl overflow-hidden hover:border-brand border border-transparent transition-all fade-up">
+                    <div class="aspect-video bg-accent-dark relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-brand/20 text-brand text-sm rounded-full">Platform</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading mb-3">
+                            Shopify vs WooCommerce: 2024 Comparison
+                        </h3>
+                        <p class="text-text-grey mb-4">
+                            An in-depth analysis of both platforms, including performance, features, 
+                            costs, and which is best for your business.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-grey">15 min read</span>
+                            <a href="#" class="text-brand hover:text-brand-dark transition-colors">
+                                Read More →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12 fade-up">
+                <button class="btn btn-secondary border border-brand text-brand px-8 py-3 rounded-full font-semibold hover:bg-brand hover:text-black transition-all">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-16 bg-secondary-black">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-heading mb-12 text-center">Free Resources</h2>
+            
+            <div class="grid cols-3 gap-8">
+                <!-- Resource 1 -->
+                <div class="resource-card bg-black p-8 rounded-xl border border-accent-dark hover:border-brand transition-colors fade-up">
+                    <div class="text-brand text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-heading mb-3">SEO Audit Checklist</h3>
+                    <p class="text-text-grey mb-6">
+                        Complete 127-point technical SEO audit checklist to identify and fix issues.
+                    </p>
+                    <a href="#" class="text-brand hover:text-brand-dark transition-colors font-semibold">
+                        Download Free →
+                    </a>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="resource-card bg-black p-8 rounded-xl border border-accent-dark hover:border-brand transition-colors fade-up">
+                    <div class="text-brand text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-heading mb-3">PPC Calculator</h3>
+                    <p class="text-text-grey mb-6">
+                        Calculate your optimal PPC budget, expected ROAS, and campaign projections.
+                    </p>
+                    <a href="#" class="text-brand hover:text-brand-dark transition-colors font-semibold">
+                        Try Calculator →
+                    </a>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="resource-card bg-black p-8 rounded-xl border border-accent-dark hover:border-brand transition-colors fade-up">
+                    <div class="text-brand text-4xl mb-4">📧</div>
+                    <h3 class="text-xl font-heading mb-3">Email Templates</h3>
+                    <p class="text-text-grey mb-6">
+                        High-converting email templates for welcome series, abandonment, and more.
+                    </p>
+                    <a href="#" class="text-brand hover:text-brand-dark transition-colors font-semibold">
+                        Get Templates →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <div class="bg-gradient-to-r from-brand/20 to-brand/10 rounded-2xl p-12 text-center fade-up">
+                <h2 class="text-3xl font-heading mb-4">Stay Ahead of the Curve</h2>
+                <p class="text-xl text-text-grey mb-8 max-w-2xl mx-auto">
+                    Get weekly insights, industry updates, and exclusive strategies delivered to your inbox.
+                </p>
+                <form class="max-w-md mx-auto flex gap-4">
+                    <input 
+                        type="email" 
+                        placeholder="your@email.com" 
+                        class="flex-1 px-6 py-3 bg-black border border-accent-dark rounded-full focus:border-brand focus:outline-none transition-colors"
+                        required
+                    >
+                    <button type="submit" class="btn btn-primary bg-brand text-black px-8 py-3 rounded-full font-semibold hover:bg-brand-dark transition-all">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="text-sm text-text-grey mt-4">No spam, unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-accent-dark">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="/" class="text-2xl font-heading font-bold text-brand">Rayze</a>
+                    <p class="text-text-grey mt-2">© 2024 Rayze Agency. All rights reserved.</p>
+                </div>
+                <div class="flex gap-8">
+                    <a href="/privacy" class="text-text-grey hover:text-white transition-colors">Privacy</a>
+                    <a href="/terms" class="text-text-grey hover:text-white transition-colors">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

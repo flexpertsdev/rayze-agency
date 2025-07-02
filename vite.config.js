@@ -44,7 +44,13 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        // Add other pages as needed
+        about: resolve(__dirname, 'about.html'),
+        contact: resolve(__dirname, 'contact.html'),
+        services: resolve(__dirname, 'services.html'),
+        caseStudies: resolve(__dirname, 'case-studies.html'),
+        insights: resolve(__dirname, 'insights.html'),
+        seo: resolve(__dirname, 'services/seo.html'),
+        ppc: resolve(__dirname, 'services/ppc.html'),
       },
       output: {
         manualChunks: {

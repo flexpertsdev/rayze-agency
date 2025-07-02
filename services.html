@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rayze Services - Comprehensive digital marketing solutions including SEO, PPC, Technical Marketing, Email Marketing, and Strategy Consulting.">
+    <title>Digital Marketing Services - Scale Your Growth | Rayze</title>
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+</head>
+<body class="bg-black text-white">
+    <!-- Loading Screen -->
+    <div class="loading-screen fixed inset-0 bg-black z-50 flex items-center justify-center">
+        <div class="loading-content">
+            <h2 class="text-h1-mobile font-heading text-brand">Rayze</h2>
+            <div class="loading-bar mt-4 w-48 h-1 bg-accent-dark overflow-hidden">
+                <div class="loading-progress h-full bg-brand transition-transform duration-1000"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header fixed top-0 left-0 w-full z-40 transition-all duration-300">
+        <nav class="container mx-auto flex items-center justify-between py-6">
+            <a href="/" class="logo text-2xl font-heading font-bold">
+                <span class="text-brand">Rayze</span>
+            </a>
+            
+            <div class="nav-menu hidden lg:flex items-center gap-8">
+                <a href="/services" class="nav-link text-white transition-colors">Services</a>
+                <a href="/case-studies" class="nav-link text-text-grey hover:text-white transition-colors">Case Studies</a>
+                <a href="/about" class="nav-link text-text-grey hover:text-white transition-colors">About</a>
+                <a href="/insights" class="nav-link text-text-grey hover:text-white transition-colors">Insights</a>
+                <a href="/contact" class="btn btn-primary bg-brand text-black px-6 py-3 rounded-full font-semibold hover:bg-brand-dark transition-colors">Get Started</a>
+            </div>
+            
+            <button class="nav-toggle lg:hidden w-8 h-8 relative" aria-label="Toggle menu">
+                <span class="nav-toggle-line absolute left-0 w-full h-0.5 bg-white transition-all"></span>
+                <span class="nav-toggle-line absolute left-0 w-full h-0.5 bg-white transition-all"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-[60vh] flex items-center relative overflow-hidden pt-24">
+        <div class="container mx-auto relative z-10">
+            <div class="hero-content max-w-4xl">
+                <h1 class="hero-title font-heading mb-6">
+                    <span class="span-hlines">
+                        <span class="span-hline">
+                            <span class="span-hline-inner">Services that</span>
+                        </span>
+                        <span class="span-hline">
+                            <span class="span-hline-inner text-gradient">deliver results</span>
+                        </span>
+                    </span>
+                </h1>
+                
+                <p class="hero-subtitle text-xl text-text-grey mb-8 max-w-2xl fade-up">
+                    From SEO to strategy consulting, we provide comprehensive digital marketing 
+                    solutions designed to scale your business sustainably.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-24">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-h1-md font-heading mb-4">How We Help You Grow</h2>
+                <p class="text-xl text-text-grey max-w-3xl mx-auto">
+                    Our integrated approach ensures every channel works together to maximize your ROI
+                </p>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="grid cols-2 gap-8 mb-16">
+                <!-- SEO Service -->
+                <article class="service-card bg-secondary-black rounded-2xl p-10 border border-accent-dark hover:border-brand transition-all fade-up group">
+                    <div class="text-brand text-5xl mb-6 group-hover:scale-110 transition-transform">🔍</div>
+                    <h3 class="text-3xl font-heading mb-4">SEO & Technical SEO</h3>
+                    <p class="text-lg text-text-grey mb-6">
+                        Dominate search results with our data-driven SEO strategies. We optimize 
+                        every aspect from technical foundations to content that converts.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Technical SEO audits & implementation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Core Web Vitals optimization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Content strategy & optimization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Local SEO & schema markup</span>
+                        </li>
+                    </ul>
+                    <a href="/services/seo" class="text-brand hover:text-brand-dark transition-colors font-semibold inline-flex items-center gap-2">
+                        Learn More About SEO
+                        <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </article>
+
+                <!-- PPC Service -->
+                <article class="service-card bg-secondary-black rounded-2xl p-10 border border-accent-dark hover:border-brand transition-all fade-up group">
+                    <div class="text-brand text-5xl mb-6 group-hover:scale-110 transition-transform">📊</div>
+                    <h3 class="text-3xl font-heading mb-4">PPC & Paid Media</h3>
+                    <p class="text-lg text-text-grey mb-6">
+                        Maximize ROAS with precision-targeted campaigns across Google Ads, social 
+                        media, and emerging platforms. Every pound works harder.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Google Ads & Shopping campaigns</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Social media advertising</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Retargeting & audience segmentation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Conversion tracking & optimization</span>
+                        </li>
+                    </ul>
+                    <a href="/services/ppc" class="text-brand hover:text-brand-dark transition-colors font-semibold inline-flex items-center gap-2">
+                        Learn More About PPC
+                        <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </article>
+
+                <!-- Technical Marketing -->
+                <article class="service-card bg-secondary-black rounded-2xl p-10 border border-accent-dark hover:border-brand transition-all fade-up group">
+                    <div class="text-brand text-5xl mb-6 group-hover:scale-110 transition-transform">⚡</div>
+                    <h3 class="text-3xl font-heading mb-4">Technical Marketing</h3>
+                    <p class="text-lg text-text-grey mb-6">
+                        Bridge the gap between marketing and technology. We implement advanced 
+                        tracking, automation, and infrastructure for scalable growth.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Server-side tracking implementation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Marketing automation setup</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>API integrations & data pipelines</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Performance optimization</span>
+                        </li>
+                    </ul>
+                    <a href="/services/technical-marketing" class="text-brand hover:text-brand-dark transition-colors font-semibold inline-flex items-center gap-2">
+                        Learn More About Technical Marketing
+                        <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </article>
+
+                <!-- Email Marketing -->
+                <article class="service-card bg-secondary-black rounded-2xl p-10 border border-accent-dark hover:border-brand transition-all fade-up group">
+                    <div class="text-brand text-5xl mb-6 group-hover:scale-110 transition-transform">📧</div>
+                    <h3 class="text-3xl font-heading mb-4">Email Marketing</h3>
+                    <p class="text-lg text-text-grey mb-6">
+                        Turn subscribers into revenue with sophisticated email strategies. From 
+                        automation to personalization, we maximize every send.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Email strategy & segmentation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Automation workflows</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Template design & A/B testing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-brand mt-1">✓</span>
+                            <span>Deliverability optimization</span>
+                        </li>
+                    </ul>
+                    <a href="/services/email-marketing" class="text-brand hover:text-brand-dark transition-colors font-semibold inline-flex items-center gap-2">
+                        Learn More About Email Marketing
+                        <span class="group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="grid cols-2 gap-8">
+                <!-- Platform Management -->
+                <article class="service-card bg-black rounded-2xl p-8 border border-accent-dark hover:border-brand transition-all fade-up">
+                    <h3 class="text-2xl font-heading mb-4">Platform Management</h3>
+                    <p class="text-text-grey mb-6">
+                        Expert management of your e-commerce and marketplace platforms. We optimize 
+                        operations, improve conversions, and scale efficiently.
+                    </p>
+                    <a href="/services/platform-management" class="text-brand hover:text-brand-dark transition-colors font-semibold">
+                        Explore Platform Management →
+                    </a>
+                </article>
+
+                <!-- Strategy Consulting -->
+                <article class="service-card bg-black rounded-2xl p-8 border border-accent-dark hover:border-brand transition-all fade-up">
+                    <h3 class="text-2xl font-heading mb-4">Strategy Consulting</h3>
+                    <p class="text-text-grey mb-6">
+                        Strategic guidance from seasoned experts. We help you make data-driven 
+                        decisions and build sustainable growth frameworks.
+                    </p>
+                    <a href="/services/strategy-consulting" class="text-brand hover:text-brand-dark transition-colors font-semibold">
+                        Explore Strategy Consulting →
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24 bg-secondary-black">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-h1-md font-heading mb-4 span-hlines">
+                    <span class="span-hline">
+                        <span class="span-hline-inner">Our Process</span>
+                    </span>
+                </h2>
+                <p class="text-xl text-text-grey max-w-2xl mx-auto">
+                    A proven methodology that delivers consistent results
+                </p>
+            </div>
+
+            <div class="grid cols-4 gap-8">
+                <div class="process-step text-center fade-up">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-brand/20 flex items-center justify-center">
+                        <span class="text-2xl font-heading text-brand">01</span>
+                    </div>
+                    <h3 class="text-xl font-heading mb-3">Discover</h3>
+                    <p class="text-text-grey">
+                        Deep dive into your business, goals, and current performance
+                    </p>
+                </div>
+
+                <div class="process-step text-center fade-up">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-brand/20 flex items-center justify-center">
+                        <span class="text-2xl font-heading text-brand">02</span>
+                    </div>
+                    <h3 class="text-xl font-heading mb-3">Strategize</h3>
+                    <p class="text-text-grey">
+                        Develop data-driven strategies tailored to your objectives
+                    </p>
+                </div>
+
+                <div class="process-step text-center fade-up">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-brand/20 flex items-center justify-center">
+                        <span class="text-2xl font-heading text-brand">03</span>
+                    </div>
+                    <h3 class="text-xl font-heading mb-3">Execute</h3>
+                    <p class="text-text-grey">
+                        Implement campaigns with precision and continuous optimization
+                    </p>
+                </div>
+
+                <div class="process-step text-center fade-up">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-brand/20 flex items-center justify-center">
+                        <span class="text-2xl font-heading text-brand">04</span>
+                    </div>
+                    <h3 class="text-xl font-heading mb-3">Scale</h3>
+                    <p class="text-text-grey">
+                        Expand successful strategies for sustained growth
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24">
+        <div class="container mx-auto text-center">
+            <h2 class="text-h1-md font-heading mb-6 span-hlines">
+                <span class="span-hline">
+                    <span class="span-hline-inner">Ready to scale?</span>
+                </span>
+            </h2>
+            <p class="text-xl text-text-grey mb-8 max-w-2xl mx-auto fade-up">
+                Let's discuss which services will drive the best results for your business
+            </p>
+            <div class="fade-up">
+                <a href="/contact" class="btn btn-primary bg-brand text-black px-8 py-4 rounded-full font-semibold hover:bg-brand-dark transition-all hover-lift inline-block">
+                    Get Your Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-accent-dark">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="/" class="text-2xl font-heading font-bold text-brand">Rayze</a>
+                    <p class="text-text-grey mt-2">© 2024 Rayze Agency. All rights reserved.</p>
+                </div>
+                <div class="flex gap-8">
+                    <a href="/privacy" class="text-text-grey hover:text-white transition-colors">Privacy</a>
+                    <a href="/terms" class="text-text-grey hover:text-white transition-colors">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
