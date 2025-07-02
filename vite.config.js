@@ -51,6 +51,10 @@ export default defineConfig({
         insights: resolve(__dirname, 'insights.html'),
         seo: resolve(__dirname, 'services/seo.html'),
         ppc: resolve(__dirname, 'services/ppc.html'),
+        technicalMarketing: resolve(__dirname, 'services/technical-marketing.html'),
+        emailMarketing: resolve(__dirname, 'services/email-marketing.html'),
+        platformManagement: resolve(__dirname, 'services/platform-management.html'),
+        strategyConsulting: resolve(__dirname, 'services/strategy-consulting.html'),
       },
       output: {
         manualChunks: {
