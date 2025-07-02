@@ -1,0 +1,61 @@
+// Hero Section Styles
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .hero-title {
+    margin-bottom: 2rem;
+    
+    .span-hline {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .hero-subtitle {
+    .span-pline {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+  .hero-cta {
+    margin-top: 3rem;
+  }
+  
+  // Background effects
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    
+    .gradient-orb {
+      animation: float 20s infinite ease-in-out;
+      
+      &:nth-child(2) {
+        animation-delay: -10s;
+        animation-duration: 25s;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}

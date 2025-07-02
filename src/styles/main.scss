@@ -1,0 +1,38 @@
+// CSS Variables for theme
+:root {
+  // Colors
+  --color-primary-black: #000000;
+  --color-secondary-black: #1a1a1a;
+  --color-brand: #00ff88;
+  --color-brand-dark: #00cc6a;
+  --color-text-grey: #999999;
+  --color-accent-dark: #333333;
+  --color-white: #ffffff;
+  
+  // Fonts
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  // Font sizes
+  --text-h1-mobile: 2rem;
+  --text-h1-sm: 2.5rem;
+  --text-h1-md: 3rem;
+  --text-h1-lg: 4rem;
+  --text-h1-xl: 5rem;
+  --text-h1-2xl: 6rem;
+  
+  // Spacing
+  --spacing-section: 6rem;
+  
+  // Animations
+  --ease-smooth: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+// Import custom styles
+@import './base/reset';
+@import './base/typography';
+@import './base/animations';
+@import './components/navigation';
+@import './components/hero';
+@import './components/sections';
+@import './utilities/helpers';

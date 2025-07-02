@@ -1,0 +1,79 @@
+// Section Components
+.section {
+  padding: 6rem 0;
+  
+  @media (min-width: 768px) {
+    padding: 8rem 0;
+  }
+  
+  @media (min-width: 1024px) {
+    padding: 10rem 0;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+}
+
+// Service cards
+.service-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ff88, transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    
+    &::before {
+      transform: translateX(100%);
+    }
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+    border-radius: 0.75rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description {
+    color: #999999;
+    line-height: 1.6;
+  }
+}
